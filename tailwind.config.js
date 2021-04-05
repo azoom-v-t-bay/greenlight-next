@@ -1,5 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
-const plugin = require('tailwindcss/plugin')
+// const plugin = require('tailwindcss/plugin')
 const colors = require('tailwindcss/colors')
 
 /*
@@ -28,11 +28,11 @@ module.exports = {
   },
   variants: {},
   plugins: [
-    plugin(({ addBase, config }) => {
-      addBase({
-        body: { color: config('theme.colors.body') },
-      })
-    }),
+    // plugin(({ addBase, config }) => {
+    //   addBase({
+    //     body: { color: config('theme.colors.body') },
+    //   })
+    // }),
   ],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css

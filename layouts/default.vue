@@ -5,17 +5,11 @@
 </template>
 
 <script>
-import { canonical, facebook, twitter, appLdJson } from '~/utils/headData'
-export default {
-  head() {
-    const { path } = this.$route
-    const pathWithSlash = path.endsWith('/') ? path : `${path}/`
-
-    return {
-      meta: [...facebook(pathWithSlash), ...twitter()],
-      link: [...canonical(pathWithSlash)],
-      script: [...appLdJson(pathWithSlash)],
-    }
-  },
-}
+export default {}
 </script>
+
+<style scope>
+#__default {
+  @apply h-screen overflow-hidden;
+}
+</style>
